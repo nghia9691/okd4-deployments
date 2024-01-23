@@ -1,0 +1,8 @@
+app:
+  image:
+    repository: nghia9691/sen
+    tag: 0.0.1
+  network:
+    http:
+      ingress:
+        host: sen.baloise.dev
