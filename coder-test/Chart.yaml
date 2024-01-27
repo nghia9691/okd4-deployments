@@ -2,7 +2,7 @@ apiVersion: v2
 version: 1.0.0
 name: nghiatran-coder-test
 dependencies:
-  - name:  bitnami/postgresql
+  - name:  postgresql
     version: 13.4.2
     repository: https://charts.bitnami.com/bitnami
     alias: coder-db
