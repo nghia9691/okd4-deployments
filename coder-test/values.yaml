@@ -1,8 +1,7 @@
 coder-db:
   auth:
     username: coder
-    # existingSecret: coder-db-secret
-    password: coder
+    existingSecret: coder-test-coder-db
     database: coder
   persistence:
     size: 10Gi
