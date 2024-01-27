@@ -1,8 +1,0 @@
-apiVersion: v1
-data:
-  password: Y29kZXI=
-  postgres-password: cG9zdGdyZXM=
-kind: Secret
-metadata:
-  creationTimestamp: null
-  name: coder-test-coder-db
