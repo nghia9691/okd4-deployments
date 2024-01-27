@@ -1,7 +1,6 @@
 coder-db:
   auth:
     username: coder
-    # existingSecret: coder-test-coder-db
     password: coder
     database: coder
   persistence:
