@@ -1,11 +1,11 @@
-app-ws:
+appws:
   image:
     repository: nghia9691/y-ws
     tag: 0.0.1
   network:
     http:
       ingress:
-        host: npad-ws.baloise.dev
+        host: npadws.baloise.dev
   env:
     - name: PORT
       value: "8080"

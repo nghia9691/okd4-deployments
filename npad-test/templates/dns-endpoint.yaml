@@ -4,7 +4,7 @@ metadata:
   name: {{ .Release.Name }}
 spec:
   endpoints:
-    - dnsName: {{ .Values.app-ws.network.http.ingress.host }}
+    - dnsName: {{ .Values.appws.network.http.ingress.host }}
       recordType: A
       recordTTL: 180
       targets: [""]
