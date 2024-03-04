@@ -1,7 +1,7 @@
 appws:
   image:
     repository: nghia9691/npad-server
-    tag: 0.0.1
+    tag: 0.0.2
   network:
     http:
       ingress:
