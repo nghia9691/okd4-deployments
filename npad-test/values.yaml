@@ -13,7 +13,7 @@ appws:
       value: "/app/data/lvdb"
   persistence:
     name: data
-    storageClass: trident-nfs-snapshot
+    # storageClass: trident-nfs-snapshot
     enabled: true
     accessModes: ReadWriteMany
     size: 5Gi
