@@ -6,7 +6,9 @@ appws:
     http:
       ingress:
         host: npadws.baloise.dev
-  # env:
+  env:
+    - name: HOST
+      value: "0.0.0.0"
     # - name: YPERSISTENCE
     #   value: "/app/data/lvdb"
   # persistence:
