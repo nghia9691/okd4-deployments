@@ -1,14 +1,12 @@
 appws:
   image:
-    repository: nghia9691/y-ws
+    repository: nghia9691/npad-server
     tag: 0.0.1
   network:
     http:
       ingress:
         host: npadws.baloise.dev
-  env:
-    - name: PORT
-      value: "8080"
+  # env:
     # - name: YPERSISTENCE
     #   value: "/app/data/lvdb"
   # persistence:
