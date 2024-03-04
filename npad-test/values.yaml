@@ -9,12 +9,12 @@ appws:
   env:
     - name: PORT
       value: "8080"
-    - name: YPERSISTENCE
-      value: "/app/data/lvdb"
-  persistence:
-    name: data
-    storageClass:
-    enabled: true
-    accessModes: ReadWriteMany
-    size: 5Gi
-    volumeMountPath: /app/data 
+    # - name: YPERSISTENCE
+    #   value: "/app/data/lvdb"
+  # persistence:
+  #   name: data
+  #   storageClass:
+  #   enabled: true
+  #   accessModes: ReadWriteMany
+  #   size: 5Gi
+  #   volumeMountPath: /app/data 
