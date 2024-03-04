@@ -1,0 +1,20 @@
+app-ws:
+  image:
+    repository: nghia9691/y-ws
+    tag: 0.0.1
+  network:
+    http:
+      ingress:
+        host: npad-ws.baloise.dev
+  env:
+    - name: PORT
+      value: "8080"
+    - name: YPERSISTENCE
+      value: "/app/data/lvdb"
+  persistence:
+    name: data
+    storageClass: trident-nfs-snapshot
+    enabled: true
+    accessModes: ReadWriteMany
+    size: 5Gi
+    volumeMountPath: /app/data 
