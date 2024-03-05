@@ -1,11 +1,11 @@
 appws:
   image:
     repository: nghia9691/npad-server
-    tag: 0.0.2
+    tag: 0.0.3
   network:
     http:
       ingress:
-        host: npadws.baloise.dev
+        host: npad.baloise.dev
   env:
     - name: HOST
       value: "0.0.0.0"
