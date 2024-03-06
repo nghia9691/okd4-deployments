@@ -1,14 +1,14 @@
 appws:
   image:
     repository: nghia9691/npad-server
-    tag: 0.0.3
+    tag: 0.0.4
   network:
     http:
       ingress:
         host: npad.baloise.dev
   env:
-    - name: HOST
-      value: "0.0.0.0"
+    # - name: HOST
+    #   value: "0.0.0.0"
     - name: YPERSISTENCE
       value: "/app/data/lvdb"
   persistence:
