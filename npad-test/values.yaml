@@ -15,3 +15,5 @@ appws:
     accessModes: ReadWriteMany
     size: 5Gi
     volumeMountPath: /app/data 
+  deployment:
+    strategy: Recreate
