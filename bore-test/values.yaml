@@ -3,6 +3,7 @@ app:
     repository: nghia9691/bore
     tag: 0.5.0
   network:
+    http: null
     tcp:
       servicePort: 7835
       containerPort: 7835
