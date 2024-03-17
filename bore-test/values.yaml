@@ -5,7 +5,7 @@ app:
   network:
     http: null
     tcp:
-      servicePort: 7835
+      servicePort: 80
       containerPort: 7835
       ingress:
         host: bore.baloise.dev
