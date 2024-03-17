@@ -10,11 +10,11 @@ app:
       ingress:
         host: rathole.baloise.dev
         insecureEdgeTerminationPolicy: Allow
-    my-ssh:
+    myssh:
       servicePort: 5202
       containerPort: 5202
       ingress:
-        host: ssh-rathole.baloise.dev
+        host: sshrh.baloise.dev
         insecureEdgeTerminationPolicy: Allow
   volumeMounts:
     - name: mnt

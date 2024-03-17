@@ -8,7 +8,7 @@ spec:
       recordType: A
       recordTTL: 180
       targets: [""]
-    - dnsName: {{ .Values.app.network.my-ssh.ingress.host }}
+    - dnsName: {{ .Values.app.network.myssh.ingress.host }}
       recordType: A
       recordTTL: 180
       targets: [""]
