@@ -10,4 +10,7 @@ app:
       ingress:
         host: bore.baloise.dev
         insecureEdgeTerminationPolicy: Allow
+  env:
+    - name: RUST_LOG
+      value: Debug
   args: ["server"]
