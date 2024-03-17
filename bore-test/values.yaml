@@ -10,7 +10,7 @@ app:
       ingress:
         host: rathole.baloise.dev
         insecureEdgeTerminationPolicy: Allow
-    my_ssh:
+    my-ssh:
       servicePort: 5202
       containerPort: 5202
       ingress:
