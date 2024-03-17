@@ -5,6 +5,8 @@ app:
   network:
     tcp:
       servicePort: 7835
+      containerPort: 7835
       ingress:
         host: bore.baloise.dev
+        insecureEdgeTerminationPolicy: Allow
   args: ["server"]
