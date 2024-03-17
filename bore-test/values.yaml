@@ -1,16 +1,27 @@
 app:
   image:
-    repository: nghia9691/bore
+    repository: rapiz1/rathole
     tag: 0.5.0
   network:
     http: null
-    tcp:
-      servicePort: 80
-      containerPort: 7835
+    control:
+      servicePort: 2333
+      containerPort: 2333
       ingress:
-        host: bore.baloise.dev
+        host: rathole.baloise.dev
         insecureEdgeTerminationPolicy: Allow
-  env:
-    - name: RUST_LOG
-      value: Debug
-  args: ["server"]
+    my_ssh:
+      servicePort: 5202
+      containerPort: 5202
+      ingress:
+        host: rathole.baloise.dev
+        insecureEdgeTerminationPolicy: Allow
+  volumeMounts:
+    - name: mnt
+      mountPath: /app/server.toml
+      subPath: server.toml
+  volumes:
+    - name: mnt
+      configMap:
+        name: server-config-file
+  args: ["/app/server.toml"]
