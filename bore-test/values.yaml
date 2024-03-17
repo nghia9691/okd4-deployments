@@ -1,0 +1,10 @@
+app:
+  image:
+    repository: nghia9691/bore
+    tag: 0.5.0
+  network:
+    tcp:
+      servicePort: 7835
+      ingress:
+        host: bore.baloise.dev
+  args: ["server"]
