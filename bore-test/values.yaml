@@ -14,7 +14,7 @@ app:
       servicePort: 5202
       containerPort: 5202
       ingress:
-        host: rathole.baloise.dev
+        host: ssh-rathole.baloise.dev
         insecureEdgeTerminationPolicy: Allow
   volumeMounts:
     - name: mnt
