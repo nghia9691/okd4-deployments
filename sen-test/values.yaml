@@ -1,4 +1,5 @@
 app:
+  replicaCount: 1
   image:
     repository: nghia9691/sen
     tag: 0.0.2
@@ -6,3 +7,6 @@ app:
     http:
       ingress:
         host: sen.baloise.dev
+  env:
+  - name: SEN_LOG_MSG_CONTENT
+    value: "true"
