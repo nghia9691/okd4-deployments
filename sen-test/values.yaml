@@ -1,5 +1,5 @@
 app:
-  replicaCount: 1
+  replicaCount: 0
   image:
     repository: nghia9691/sen
     tag: 0.0.2
@@ -9,4 +9,4 @@ app:
         host: sen.baloise.dev
   env:
   - name: SEN_LOG_MSG_CONTENT
-    value: "true"
+    value: "false"
