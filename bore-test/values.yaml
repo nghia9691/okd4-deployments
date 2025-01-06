@@ -5,4 +5,4 @@ app:
   network:
     http:
       ingress:
-        host: nstream.baloise.dev
+        host: stream.baloise.dev
