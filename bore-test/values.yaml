@@ -1,8 +1,17 @@
 app:
   image:
-    repository: nghia9691/n-stream
+    repository: nghia9691/fsync-server
     tag: 0.0.1
   network:
     http:
       ingress:
-        host: stream.baloise.dev
+        host: fsync.baloise.dev
+  env:
+    - name: APP_STORAGE_PATH
+      value: "/app/data"
+  persistence:
+    name: data
+    enabled: true
+    accessModes: ReadWriteMany
+    size: 3Gi
+    volumeMountPath: /app/data 
