@@ -1,7 +1,7 @@
 app:
   image:
     repository: nghia9691/fsync-server
-    tag: 0.0.2
+    tag: 0.0.3
   network:
     http:
       ingress:
@@ -13,5 +13,5 @@ app:
     name: data
     enabled: true
     accessModes: ReadWriteMany
-    size: 1Gi
+    size: 2Gi
     volumeMountPath: /app/data 
