@@ -9,6 +9,8 @@ app:
   env:
     - name: APP_STORAGE_PATH
       value: "/app/data"
+    - name: SPRING_SERVLET_MULTIPART_MAXFILESIZE
+      value: 10MB
   persistence:
     name: data
     enabled: true
