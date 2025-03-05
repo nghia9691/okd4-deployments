@@ -1,0 +1,4 @@
+app:
+  image:
+    repository: bitnami/nginx
+    tag: latest
