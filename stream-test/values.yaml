@@ -1,0 +1,8 @@
+app:
+  image:
+    repository: nghia9691/n-stream
+    tag: 0.0.1
+  network:
+    http:
+      ingress:
+        host: stream.baloise.dev
