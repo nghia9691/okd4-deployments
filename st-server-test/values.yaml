@@ -6,7 +6,7 @@ app:
   network:
     http:
       ingress:
-        host: st-server.baloise.dev
+        host: st-server-ws.baloise.dev
     tunnel:
       containerPort: 8899
       servicePort: 8899
