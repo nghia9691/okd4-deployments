@@ -14,6 +14,6 @@ app:
         host: st-server.baloise.dev
   env:
   - name: ST_WS_PORT
-    value: 8080
+    value: "8080"
   - name: ST_TUNNEL_PORT
-    value: 8899
+    value: "8899"
