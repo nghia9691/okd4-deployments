@@ -6,12 +6,12 @@ app:
   network:
     http:
       ingress:
-        host: st-server-ws.baloise.dev
+        host: st-ws.baloise.dev
     tunnel:
       containerPort: 8899
       servicePort: 8899
       ingress:
-        host: st-server.baloise.dev
+        host: st.baloise.dev
   env:
   - name: ST_WS_PORT
     value: "8080"
