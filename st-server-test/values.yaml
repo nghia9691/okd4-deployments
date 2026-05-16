@@ -1,0 +1,19 @@
+app:
+  replicaCount: 1
+  image:
+    repository: nghia9691/st-server
+    tag: 0.0.1
+  network:
+    http:
+      ingress:
+        host: st-server.baloise.dev
+    tunnel:
+      containerPort: 8899
+      servicePort: 8899
+      ingress:
+        host: st-server.baloise.dev
+  env:
+  - name: ST_WS_PORT
+    value: 8080
+  - name: ST_TUNNEL_PORT
+    value: 8899
