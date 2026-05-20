@@ -8,7 +8,6 @@ spec:
   port:
     targetPort: tunnel
   tls:
-    insecureEdgeTerminationPolicy: Allow
     termination: passthrough
   to:
     kind: Service
