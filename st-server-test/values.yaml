@@ -12,7 +12,7 @@ app:
       servicePort: 8899
       ingress:
         host: st.baloise.dev
-        path: null
+        path: ""
         insecureEdgeTerminationPolicy: Allow
         termination: passthrough
   env:
