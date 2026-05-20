@@ -12,6 +12,8 @@ app:
       servicePort: 8899
       ingress:
         host: st.baloise.dev
+        insecureEdgeTerminationPolicy: Allow
+        termination: passthrough
   env:
   - name: ST_WS_PORT
     value: "8080"
