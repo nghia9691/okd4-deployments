@@ -7,6 +7,9 @@ app:
     http:
       ingress:
         host: st-ws.baloise.dev
+    tunnel:
+      containerPort: 8899
+      servicePort: 8899
   env:
   - name: ST_WS_PORT
     value: "8080"
