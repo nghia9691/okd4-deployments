@@ -1,0 +1,17 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: app-tunnel
+  namespace: st-server-test
+spec:
+  host: st.baloise.dev
+  port:
+    targetPort: tunnel
+  tls:
+    insecureEdgeTerminationPolicy: Allow
+    termination: passthrough
+  to:
+    kind: Service
+    name: app
+    weight: 100
+  wildcardPolicy: None

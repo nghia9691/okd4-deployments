@@ -8,7 +8,7 @@ spec:
       recordType: A
       recordTTL: 180
       targets: [""]
-    - dnsName: {{ .Values.app.network.tunnel.ingress.host }}
+    - dnsName: st.baloise.dev
       recordType: A
       recordTTL: 180
       targets: [""]
